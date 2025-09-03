@@ -3,7 +3,7 @@ Pohlédněte na následující reprezentaci receptu:
 Uložte si tuto strukturu do proměnné recept na začátek nového programu. Vypište pomocí funkce print
 kolik bude celé jídlo stát korun zaokrouhlené na celé koruny nahoru.
 """
-
+import math
 recept = {
     "nazev": "Batáty se šalvějí a pancettou",
     "narocnost": "stredni",
@@ -28,6 +28,7 @@ for ingredience in recept["ingredience"]:
 cena_jidla = math.ceil(cena_jidla)
 print(f"cena jidla je {cena_jidla}.")
 
+cena_jidla_2 = 0
 for ingredience in recept["ingredience"]:
-    cena_jidla + -float((ingredience[2]).strip(" kč"))
+    cena_jidla_2 += float((ingredience[2]).strip(" kč"))
 print(f"cena jidla je {cena_jidla}.")
